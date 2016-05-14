@@ -10,11 +10,11 @@ $ npm install && bower install
 ```
 
 __Run Express (with Nodemon) and Gulp__ 
-```bash
+```
   
 $ npm start
  
-   - or if you have gulp installed globally -
+   - or with gulp installed globally -
   
 $ gulp
    
