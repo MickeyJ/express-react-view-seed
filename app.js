@@ -1,18 +1,21 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+const express = require('express');
+const path = require('path');
+const favicon = require('serve-favicon');
+const logger = require('morgan');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
+const reactExpress = require('express-react-views');
 
-var routes = require('./routes/index');
+const routes = require('./routes/index');
 
-var app = express();
+const app = express();
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jsx');
-app.use(express.static(path.join(__dirname, 'public')));
-app.engine('jsx', require('express-react-views').createEngine({ beautify: true}));
+app.engine('jsx',
+  reactExpress
+    .createEngine({ beautify: true})
+);
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -22,15 +25,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 
-app.use(function(req, res, next) {
-  var err = new Error('Not Found');
+app.use( (req, res, next) =>{
+  const err = new Error('Not Found');
   err.status = 404;
   next(err);
 });
 
 
-if (app.get('env') === 'development') {
-  app.use(function(err, req, res, next) {
+if(app.get('env') === 'development') {
+  app.use((err, req, res, next) =>{
     res.status(err.status || 500);
     res.render('error', {
       message: err.message,
@@ -39,7 +42,7 @@ if (app.get('env') === 'development') {
   });
 }
 
-app.use(function(err, req, res, next) {
+app.use( (err, req, res, next) =>{
   res.status(err.status || 500);
   res.render('error', {
     message: err.message,
