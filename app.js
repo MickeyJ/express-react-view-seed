@@ -16,7 +16,6 @@ app.engine('jsx',
   reactExpress
     .createEngine({ beautify: true})
 );
-
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -30,7 +29,6 @@ app.use( (req, res, next) =>{
   err.status = 404;
   next(err);
 });
-
 
 if(app.get('env') === 'development') {
   app.use((err, req, res, next) =>{
@@ -49,6 +47,5 @@ app.use( (err, req, res, next) =>{
     error: {}
   });
 });
-
 
 module.exports = app;

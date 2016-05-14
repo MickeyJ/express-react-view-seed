@@ -1,7 +1,7 @@
 const React = require('react');
 
 const NavHeader = (props) =>(
-  <div>
+  <section>
     
     <nav id="nav">
       <a href="/">Home</a>
@@ -11,11 +11,11 @@ const NavHeader = (props) =>(
       <a href="/contact">Contact</a>
     </nav>
     
-    <div id="banner-logo">
+    <header id="banner-logo">
       {props.siteName}
-    </div>
+    </header>
     
-  </div>
+  </section>
 );
 
 module.exports = NavHeader;

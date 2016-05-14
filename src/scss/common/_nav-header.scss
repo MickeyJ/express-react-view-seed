@@ -1,15 +1,13 @@
 
-nav{
-  padding-top: 1%;
-  padding-bottom: 1%;
+#nav{
+  @extend %pad-vert;
 
   a{
     font-size: 1.3em;
     font-weight: 200;
-    color: DodgerBlue;
-    margin-left: 1%;
-    margin-right: 1%;
     text-decoration: none;
+    color: $app-blue-2;
+    @extend %marg-lat;
     @include transition(all 0.1s);
 
     &:hover{
