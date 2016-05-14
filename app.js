@@ -9,7 +9,7 @@ const routes = require('./routes/index');
 
 const app = express();
 
-app.set('views', __dirname + '/views');
+app.set('views', __dirname + 'views');
 app.set('view engine', 'jsx');
 app.use(express.static(path.join(__dirname, 'public')));
 app.engine('jsx',
