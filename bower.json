@@ -9,6 +9,7 @@
   "license": "MIT",
   "homepage": "https://react-express-demo.herokuapp.com/",
   "ignore": [
+    "**/.*",
     "node_modules",
     "bower_components",
     "test",
