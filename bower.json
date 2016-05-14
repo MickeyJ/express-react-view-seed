@@ -5,8 +5,9 @@
   "authors": [
     "Mickey <develop.agility@gmail.com>"
   ],
+  "directory" : "public/bower_components",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://react-express-demo.herokuapp.com/",
   "ignore": [
     "**/.*",
     "node_modules",
