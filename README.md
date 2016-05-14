@@ -11,7 +11,6 @@ $ npm install && bower install
   
 ```
 
-
 __Run Express (with Nodemon) and Gulp__ 
 ```
   

@@ -1,5 +1,5 @@
 const React = require('react');
-const DefaultLayout = require('./layout');
+const DefaultLayout = require('./Layout');
 
 const About = React.createClass({
   render: function(){

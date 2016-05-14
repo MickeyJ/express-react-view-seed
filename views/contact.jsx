@@ -1,5 +1,5 @@
 const React = require('react');
-const DefaultLayout = require('./layout');
+const DefaultLayout = require('./Layout');
 
 const Contact = React.createClass({
   render: function(){
