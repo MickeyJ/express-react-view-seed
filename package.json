@@ -4,7 +4,8 @@
   "private": true,
   "main": "./bin/www",
   "scripts": {
-    "start": "node_modules/.bin/gulp"
+    "start": "node ./bin/www",
+    "dev": "node_modules/.bin/gulp"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
