@@ -20,7 +20,7 @@ const Layout = React.createClass({
 
           <NavHeader siteName={siteName}/>
 
-          <main className="container-fluid">
+          <main id="main-content" className="container-fluid">
             {this.props.children}
           </main>
 
