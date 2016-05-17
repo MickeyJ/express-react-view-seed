@@ -28,7 +28,7 @@
   font-size: 3em;
   background: $app-blue;
   color: white;
-  @include dead-center-text(150px);
+  @include dead-center-text(100px);
   @include transition( background 0.05s );
   @include banner-shadow(12px, 11px, $app-shadow);
 

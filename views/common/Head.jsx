@@ -1,4 +1,4 @@
-const React = require('react');
+import React from 'react'
 
 const Head = (props) =>(
   <head>
@@ -12,4 +12,4 @@ const Head = (props) =>(
   </head>
 );
 
-module.exports = Head;
+export default Head

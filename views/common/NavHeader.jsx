@@ -1,4 +1,4 @@
-const React = require('react');
+import React from 'react'
 
 const NavHeader = (props) =>(
   <section>
@@ -18,4 +18,4 @@ const NavHeader = (props) =>(
   </section>
 );
 
-module.exports = NavHeader;
+export default NavHeader;

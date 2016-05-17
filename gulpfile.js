@@ -24,7 +24,6 @@ gulp.task('script',() =>{
   .transform(babelify, { presets: ['es2015'] })
   .bundle()
   .pipe(source('script.js'))
-  .pipe(streamify(uglify()))
   .pipe(gulp.dest('public/js'));
 });
 

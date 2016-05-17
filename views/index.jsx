@@ -1,18 +1,16 @@
-const React = require('react');
-const DefaultLayout = require('./layout');
+import React, { Component } from 'react'
+import DefaultLayout from './layout'
 
-const Index = React.createClass({
-  render: function(){
+export default class Index extends Component {
+  render(){
     return(
       <DefaultLayout
         title={this.props.title}
         description={this.props.description}>
-        
-         <h1>{this.props.title}</h1>
-        
+
+        <h1>{this.props.title}</h1>
+
       </DefaultLayout>
     )
   }
-});
-
-module.exports = Index;
+}

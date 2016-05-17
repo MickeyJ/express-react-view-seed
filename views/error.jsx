@@ -1,8 +1,8 @@
-const React = require('react');
-const DefaultLayout = require('./layout');
+import React, { Component } from 'react'
+import DefaultLayout from './layout'
 
-const Error = React.createClass({
-  render: function(){
+export default class Error extends Component {
+  render(){
     if(this.props.error.status){
       return(
         <DefaultLayout>
@@ -27,6 +27,4 @@ const Error = React.createClass({
       )
     }
   }
-});
-
-module.exports = Error;
+}

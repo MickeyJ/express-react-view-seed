@@ -1,4 +1,4 @@
 
-#public/bower_components
-#public/css/*
-#public/js/*
+public/bower_components
+public/css/*
+public/js/*
